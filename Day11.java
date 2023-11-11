@@ -1,3 +1,5 @@
+
+import java.util.HashMap;
 public class Day11 {
     public static boolean areIsomorphic(String str1,String str2)
     {
