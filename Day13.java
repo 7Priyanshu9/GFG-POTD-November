@@ -1,6 +1,8 @@
 public class Day13{
-    public static int shortestCommonSupersequence(String X,String Y,int m,int n)
+    public static int shortestCommonSupersequence(String X,String Y)
     {
+            int m = X.length();
+            int n = Y.length();
         //Your code here
          int[][] dp = new int[m + 1][n + 1];
 
@@ -23,5 +25,14 @@ public class Day13{
         int shortestSupersequenceLength = m + n - lcsLength;
 
         return shortestSupersequenceLength;
+    }
+
+    public static void main(String[] args) {
+        String X = "AGGTAB";
+        String Y = "GXTXAYB";
+
+        int result = shortestCommonSupersequence(X, Y);
+
+        System.out.println("Length of the shortest common supersequence: " + result);
     }
 }
