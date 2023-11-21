@@ -3,6 +3,8 @@ class Node
 {
     int data;
     Node next;
+    public Node left;
+    public Node right;
     
     Node(int a)
         {
