@@ -71,7 +71,7 @@ public class Day19
 
 class Solution
 {
-   public static Node findIntersection(Node head1, Node head2)
+   public Node findIntersection(Node head1, Node head2)
     {
         // code here.
         Node x = head1, y = head2, res=null,head=null;
