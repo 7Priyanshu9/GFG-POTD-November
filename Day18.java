@@ -8,6 +8,7 @@ class Node
 {
     int data;
     Node next, prev;
+    public int height;
     Node(int data)
     {
         this.data = data;
